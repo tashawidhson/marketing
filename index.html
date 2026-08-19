@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>congruentX | FY27 &amp; Q4 2026 Marketing &amp; Partner GTM Plan</title>
+<title>congruentX | FY27 Marketing + Revenue Activation Plan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -148,6 +148,8 @@
   .num-cell{font-weight:700;color:var(--navy);}
   .pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;background:var(--offwhite);color:var(--navy);}
   .pill.green{background:#EEF7E4;color:var(--green-dark);}
+  .pill.amber{background:#FBF0DC;color:#A9781C;}
+  .pill.red{background:#FBE3E3;color:#B23A3A;}
   .pill svg.ico{width:11px;height:11px;}
   .table-scroll{overflow-x:auto;}
 
@@ -320,6 +322,75 @@
   tr.detail-row td{background:var(--offwhite)!important;font-size:12.5px;color:var(--charcoal);padding:14px 16px 16px 30px!important;border-bottom:1px solid #ECECEC;}
   tr.detail-row td strong{color:var(--navy);}
 
+  /* ---------- state of the business ---------- */
+  .maturity-callout{
+    background:var(--navy);color:var(--white);
+    border-radius:12px;padding:22px 26px;margin-bottom:32px;
+    font-size:14.5px;line-height:1.6;
+  }
+  .maturity-callout strong{color:var(--green);}
+  .sob-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .sob-col{background:var(--white);border:1px solid #E4E4E4;border-radius:10px;padding:22px 24px;}
+  .sob-col.gap{border-top:4px solid #D98B3E;}
+  .sob-col.real{border-top:4px solid var(--green);}
+  .sob-col h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+  .sob-col h4 svg.ico{width:16px;height:16px;}
+  .sob-col ul{list-style:none;}
+  .sob-col li{font-size:13.5px;color:var(--charcoal);padding-left:16px;position:relative;margin-bottom:11px;line-height:1.45;}
+  .sob-col.real li::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;background:var(--green);border-radius:50%;}
+  .sob-col.gap li::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;background:#D98B3E;border-radius:50%;}
+
+  /* ---------- GTM outcomes partner diagram ---------- */
+  .gtm-diagram{display:flex;align-items:center;justify-content:center;gap:0;margin:36px 0 40px;flex-wrap:wrap;}
+  .gtm-node{
+    background:var(--white);border:1.5px solid #DDE2E6;border-radius:10px;
+    padding:20px 26px;display:flex;align-items:center;gap:12px;
+    font-weight:700;color:var(--navy);font-size:15px;min-width:150px;justify-content:center;
+  }
+  .gtm-node svg.ico{width:20px;height:20px;color:var(--gray);}
+  .gtm-center{
+    background:var(--navy);color:var(--white);border:2px solid var(--green);
+    border-radius:12px;padding:22px 34px;text-align:center;margin:0 28px;
+  }
+  .gtm-center .role{color:var(--green);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;}
+  .gtm-center .who{font-size:19px;font-weight:800;}
+  .gtm-arrow{font-size:22px;color:var(--green);font-weight:700;padding:0 6px;}
+  .gtm-sub{text-align:center;color:var(--gray);font-size:13px;margin-bottom:40px;}
+  .cap-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:34px;}
+  .cap-card{background:var(--white);border:1px solid #E4E4E4;border-radius:10px;padding:20px 16px;text-align:center;transition:box-shadow .2s;}
+  .cap-card:hover{box-shadow:0 8px 20px rgba(66,91,118,.12);}
+  .cap-card .cap-ico{width:44px;height:44px;border-radius:50%;background:var(--offwhite);color:var(--green-dark);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;}
+  .cap-card h5{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .cap-card p{font-size:11.5px;color:var(--gray);line-height:1.4;}
+  .outcome-flow{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;background:var(--offwhite);border-radius:12px;padding:22px;}
+  .outcome-flow .of-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green-dark);width:100%;text-align:center;margin-bottom:6px;}
+  .outcome-flow .of-step{font-weight:700;color:var(--navy);font-size:13.5px;}
+  .outcome-flow .of-arrow{color:var(--green);font-weight:700;}
+  @media (max-width:900px){
+    .gtm-diagram{flex-direction:column;}
+    .gtm-arrow{transform:rotate(90deg);}
+    .cap-grid{grid-template-columns:1fr 1fr;}
+  }
+
+  /* ---------- instrument the funnel flow ---------- */
+  .instr-flow{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;margin:36px 0 26px;}
+  .instr-node{
+    background:var(--white);border:1.5px solid #DDE2E6;border-radius:10px;
+    padding:20px 18px;text-align:center;min-width:120px;margin:0 6px;
+  }
+  .instr-node.hi{background:var(--offwhite);}
+  .instr-node.final{border-color:var(--green);border-width:2px;}
+  .instr-node .num{font-size:22px;font-weight:800;color:var(--navy);}
+  .instr-node .num.green{color:var(--green-dark);}
+  .instr-node .lbl{font-size:11.5px;color:var(--gray);font-weight:600;margin-top:4px;}
+  .instr-node .instr-ico{color:var(--green-dark);margin-bottom:6px;}
+  .instr-arrow{color:var(--green);font-weight:700;font-size:18px;padding:0 4px;}
+  .cadence-bar{
+    text-align:center;background:var(--offwhite);border-radius:10px;
+    padding:14px;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:22px;
+  }
+  @media (max-width:900px){.instr-flow{flex-direction:column;}.instr-arrow{transform:rotate(90deg);}}
+
   /* ---------- brand assets section ---------- */
   .brand-section{background:var(--navy);color:var(--white);text-align:center;}
   .brand-section .section-title{color:var(--white);}
@@ -409,9 +480,12 @@
 <!-- ============ SIDE NAV ============ -->
 <nav class="side-nav" aria-label="Section navigation">
   <a href="#math" data-sec="math"><svg class="ico"><use href="#ic-trend"/></svg><span class="tip">The Math</span></a>
+  <a href="#gtm" data-sec="gtm"><svg class="ico"><use href="#ic-users"/></svg><span class="tip">GTM Outcomes Partner</span></a>
   <a href="#portfolio" data-sec="portfolio"><svg class="ico"><use href="#ic-layers"/></svg><span class="tip">Portfolio &amp; Channels</span></a>
-  <a href="#jobs" data-sec="jobs"><svg class="ico"><use href="#ic-target"/></svg><span class="tip">Four Jobs</span></a>
+  <a href="#jobs" data-sec="jobs"><svg class="ico"><use href="#ic-target"/></svg><span class="tip">Four Execution Priorities</span></a>
+  <a href="#instrument" data-sec="instrument"><svg class="ico"><use href="#ic-bar"/></svg><span class="tip">Instrument the Funnel</span></a>
   <a href="#tenets" data-sec="tenets"><svg class="ico"><use href="#ic-compass"/></svg><span class="tip">Tenets</span></a>
+  <a href="#state" data-sec="state"><svg class="ico"><use href="#ic-info"/></svg><span class="tip">State of the Business</span></a>
   <a href="#benchmarks" data-sec="benchmarks"><svg class="ico"><use href="#ic-bar"/></svg><span class="tip">Benchmarks</span></a>
   <a href="#budget" data-sec="budget"><svg class="ico"><use href="#ic-dollar"/></svg><span class="tip">Budget</span></a>
   <a href="#team" data-sec="team"><svg class="ico"><use href="#ic-users"/></svg><span class="tip">Team</span></a>
@@ -429,40 +503,87 @@
     <span class="logo-word">congruent<span class="x">X</span></span>
   </div>
   <div class="logo-tag">Modern CRM. Active Agents. Never Legacy Again.</div>
-  <div class="cover-kicker">FY27 &amp; Q4 2026 Planning · Confidential</div>
-  <h1>Marketing &amp; Partner<br>Go-To-<span>Market</span> Plan</h1>
-  <p class="deck-sub">Turning ecosystem access into funded, repeatable pipeline &mdash; built around Microsoft and Salesforce, sized to a three-person team.</p>
+  <div class="cover-kicker">Confidential &mdash; For Internal Use Only</div>
+  <h1>FY27 Marketing +<br>Revenue <span>Activation</span> Plan</h1>
+  <p class="deck-sub">900 MQLs. One shared funnel. Four execution priorities.</p>
   <a class="scroll-cue" href="#math"><span class="dot">&darr;</span> Scroll to explore</a>
   <div class="cover-meta">
     <div><strong>Prepared by</strong><br>Tasha Widhson</div>
     <div><strong>Prepared for</strong><br>congruentX Leadership &amp; Sales Team</div>
     <div><strong>Purpose</strong><br>Confirm FY27 motion &amp; Q4 activation targets</div>
+    <div><strong>Status</strong><br>Commitments requested this planning cycle</div>
   </div>
   <div class="cover-tagline">We deliver Outcomes. Human-Led, AI Accelerated.</div>
 </section>
 
 <!-- ============ THE MATH ============ -->
 <section id="math" class="reveal">
-  <div class="eyebrow"><svg class="ico"><use href="#ic-trend"/></svg>The Governing Math</div>
-  <h2 class="section-title">The $30M Bookings / $15M ARR Engine</h2>
+  <div class="eyebrow"><svg class="ico"><use href="#ic-trend"/></svg>FY27 Shared Revenue Funnel</div>
+  <h2 class="section-title">900 MQLs &rarr; $15M ARR</h2>
   <div class="section-rule"></div>
-  <p class="section-sub">This is the official math from Chuck and Peter's plan &mdash; not a separate marketing model. Every program in this plan is judged by whether it feeds this number. <em>Numbers animate in as you scroll.</em></p>
+  <p class="section-sub">One shared funnel, not two competing ones. Marketing creates demand; Sales, Partner &amp; Customer Success convert it. <em>Numbers animate in as you scroll.</em></p>
 
-  <div class="stat-grid">
-    <div class="stat-cell"><div class="stat-ico"><svg class="ico"><use href="#ic-dollar"/></svg></div><div class="num countup" data-target="30" data-prefix="$" data-suffix="M">$0M</div><div class="lbl">Bookings Target</div><div class="sub">60 wins at $500K weighted average</div></div>
-    <div class="stat-cell"><div class="stat-ico"><svg class="ico"><use href="#ic-layers"/></svg></div><div class="num countup" data-target="15" data-prefix="$" data-suffix="M">$0M</div><div class="lbl">Managed Outcomes ARR</div><div class="sub">At a $250K weighted average</div></div>
-    <div class="stat-cell"><div class="stat-ico"><svg class="ico"><use href="#ic-target"/></svg></div><div class="num accent countup" data-target="3" data-prefix="" data-suffix="x">0x</div><div class="lbl">Pipeline Coverage</div><div class="sub">Required against the bookings target</div></div>
-    <div class="stat-cell"><div class="stat-ico"><svg class="ico"><use href="#ic-bar"/></svg></div><div class="num countup" data-target="90" data-prefix="$" data-suffix="M">$0M</div><div class="lbl">Qualified Pipeline</div><div class="sub">Needed company-wide to hit coverage</div></div>
-    <div class="stat-cell"><div class="stat-ico"><svg class="ico"><use href="#ic-compass"/></svg></div><div class="num accent">2:1</div><div class="lbl">Booked&rarr;ARR Bridge</div><div class="sub">Roughly a two-year committed term</div></div>
-  </div>
-
-  <div class="funnel-arrow"><span>180 / year</span><span>86 / year</span><span>60 / year</span></div>
+  <div class="funnel-arrow"><span>900 MQLs</span><span>40% &rarr;</span><span>300 Qualified Opps</span><span>20% &rarr;</span><span>60 Wins</span></div>
   <div class="funnel-wrap">
-    <div class="funnel-step f1"><div class="n countup" data-target="15" data-suffix="/mo">0/mo</div><div class="t">Sales-Accepted Qualified</div></div>
-    <div class="funnel-step f2"><div class="n countup" data-target="7" data-suffix="/mo">0/mo</div><div class="t">Outcome-Qualified</div></div>
-    <div class="funnel-step f3"><div class="n countup" data-target="5" data-suffix="/mo">0/mo</div><div class="t">Recurring Wins</div></div>
+    <div class="funnel-step f1"><div class="n countup" data-target="900" data-suffix="">0</div><div class="t">MQLs &mdash; Marketing</div></div>
+    <div class="funnel-step f2"><div class="n countup" data-target="300" data-suffix="">0</div><div class="t">Qualified Opportunities &mdash; Revenue Team</div></div>
+    <div class="funnel-step f3"><div class="n countup" data-target="60" data-suffix="">0</div><div class="t">Wins</div></div>
   </div>
-  <p class="source-note">Sales carries $26.8M of the $90M qualified-pipeline requirement, leaving a $63.2M gap for the ecosystem, campaign, event, and content channels to close.</p>
+
+  <div class="stat-grid" style="margin-top:36px;grid-template-columns:repeat(3,1fr);">
+    <div class="stat-cell"><div class="stat-ico"><svg class="ico"><use href="#ic-dollar"/></svg></div><div class="num countup" data-target="250" data-prefix="$" data-suffix="K">$0K</div><div class="lbl">ARR / Win</div></div>
+    <div class="stat-cell"><div class="stat-ico"><svg class="ico"><use href="#ic-calendar"/></svg></div><div class="num countup" data-target="500" data-prefix="$" data-suffix="K">$0K</div><div class="lbl">2-Year Value</div></div>
+    <div class="stat-cell"><div class="stat-ico"><svg class="ico"><use href="#ic-bar"/></svg></div><div class="num accent countup" data-target="5" data-suffix="x">0x</div><div class="lbl">Pipeline Coverage</div></div>
+  </div>
+
+  <div class="stat-grid" style="margin-top:20px;grid-template-columns:repeat(3,1fr);background:var(--navy);">
+    <div class="stat-cell" style="border-color:rgba(255,255,255,.15);"><div class="stat-ico" style="background:rgba(255,255,255,.12);color:var(--white);"><svg class="ico"><use href="#ic-layers"/></svg></div><div class="num countup" data-target="75" data-prefix="$" data-suffix="M" style="color:var(--white);">$0M</div><div class="lbl" style="color:#DCE3E9;">Qualified Pipeline</div></div>
+    <div class="stat-cell" style="border-color:rgba(255,255,255,.15);"><div class="stat-ico" style="background:rgba(255,255,255,.12);color:var(--green);"><svg class="ico"><use href="#ic-dollar"/></svg></div><div class="num countup" data-target="15" data-prefix="$" data-suffix="M" style="color:var(--green);">$0M</div><div class="lbl" style="color:#DCE3E9;">ARR</div></div>
+    <div class="stat-cell"><div class="stat-ico" style="background:rgba(255,255,255,.12);color:var(--white);"><svg class="ico"><use href="#ic-target"/></svg></div><div class="num countup" data-target="30" data-prefix="$" data-suffix="M" style="color:var(--white);">$0M</div><div class="lbl" style="color:#DCE3E9;">Booked Value</div></div>
+  </div>
+
+  <div class="callout" style="margin-top:32px;">
+    <svg class="ico"><use href="#ic-users"/></svg>
+    <div><strong>Marketing creates demand. Sales, Partner + Customer Success convert it.</strong> That handoff, not headcount, is what this plan is built to make repeatable.</div>
+  </div>
+</section>
+
+<!-- ============ GTM OUTCOMES PARTNER ============ -->
+<section id="gtm" class="reveal" style="background:var(--offwhite);">
+  <div class="eyebrow"><svg class="ico"><use href="#ic-users"/></svg>FY27 Go-To-Market Enablement</div>
+  <h2 class="section-title">Sasha Aligns Sales + Marketing to Measurable Outcomes</h2>
+  <div class="section-rule"></div>
+
+  <div class="gtm-diagram">
+    <div class="gtm-node"><svg class="ico"><use href="#ic-users"/></svg>Sales</div>
+    <span class="gtm-arrow">&larr;</span>
+    <div class="gtm-center">
+      <div class="role">GTM Outcomes Partner</div>
+      <div class="who">Sasha Bishop</div>
+    </div>
+    <span class="gtm-arrow">&rarr;</span>
+    <div class="gtm-node"><svg class="ico"><use href="#ic-megaphone"/></svg>Marketing</div>
+  </div>
+  <p class="gtm-sub">Aligns priorities &middot; coordinates execution &middot; measures progress</p>
+
+  <div class="col-title-row" style="border-bottom:2px solid var(--green);">
+    <div class="col-title">How Sasha Enables the Shared Revenue Motion</div>
+  </div>
+  <div class="cap-grid" style="margin-top:22px;">
+    <div class="cap-card"><div class="cap-ico"><svg class="ico"><use href="#ic-monitor"/></svg></div><h5>Digital Sales Rooms</h5><p>Build buyer-ready rooms that keep stakeholders aligned.</p></div>
+    <div class="cap-card"><div class="cap-ico"><svg class="ico"><use href="#ic-megaphone"/></svg></div><h5>Social + Creative</h5><p>Coordinate social scheduling and graphic creation.</p></div>
+    <div class="cap-card"><div class="cap-ico"><svg class="ico"><use href="#ic-dollar"/></svg></div><h5>Partner Center</h5><p>Drive CPOR, co-sell and MCI execution.</p></div>
+    <div class="cap-card"><div class="cap-ico"><svg class="ico"><use href="#ic-layers"/></svg></div><h5>CRM</h5><p>Support clean stages, ownership, activity and reporting.</p></div>
+    <div class="cap-card"><div class="cap-ico"><svg class="ico"><use href="#ic-target"/></svg></div><h5>B &amp; C MS Seller Nurture</h5><p>Coordinate targeted seller outreach and follow-up.</p></div>
+  </div>
+
+  <div class="outcome-flow">
+    <div class="of-label">One Shared Outcome</div>
+    <span class="of-step">Aligned execution</span><span class="of-arrow">&rarr;</span>
+    <span class="of-step">Stronger seller engagement</span><span class="of-arrow">&rarr;</span>
+    <span class="of-step">Cleaner pipeline</span><span class="of-arrow">&rarr;</span>
+    <span class="of-step">Measurable business outcomes</span>
+  </div>
 </section>
 
 <!-- ============ PORTFOLIO + CHANNEL MATRIX ============ -->
@@ -495,13 +616,13 @@
       <caption>Channel Targets &mdash; click a row for detail, or use the filter above to highlight marketing's share</caption>
       <thead><tr><th>Channel</th><th>Opps / Year</th><th>Opps / Month</th><th>Pipeline</th><th>ARR</th><th>Primarily Owned By</th></tr></thead>
       <tbody>
-        <tr class="expandable" data-owner="partner"><td>Microsoft &amp; Salesforce ecosystem relationships (Co-Sell)</td><td class="num-cell">108</td><td>9</td><td class="num-cell">$63M</td><td>$10.5M</td><td><span class="pill"><svg class="ico"><use href="#ic-users"/></svg>Sales &amp; Partner</span></td></tr>
+        <tr class="expandable" data-owner="partner"><td>Microsoft &amp; Salesforce ecosystem relationships (partner-sourced, Co-Sell)</td><td class="num-cell">84</td><td>7</td><td class="num-cell">$42M</td><td>$7.0M</td><td><span class="pill"><svg class="ico"><use href="#ic-users"/></svg>Sales &amp; Partner, Marketing supports</span></td></tr>
         <tr class="detail-row"><td colspan="6"><strong>Why it's sized this way:</strong> the largest and lowest-cost-per-opportunity channel &mdash; direct Microsoft/Salesforce seller relationships and Co-Sell entries. Marketing supports with named-account lists and campaign air cover; Sales &amp; Partner own the relationship.</td></tr>
-        <tr class="expandable" data-owner="marketing"><td>Targeted email &amp; LinkedIn campaigns</td><td class="num-cell">12</td><td>1</td><td class="num-cell">$5M</td><td>$0.8M</td><td><span class="pill green"><svg class="ico"><use href="#ic-megaphone"/></svg>Marketing</span></td></tr>
+        <tr class="expandable" data-owner="marketing"><td>Targeted email &amp; LinkedIn campaigns</td><td class="num-cell">24</td><td>2</td><td class="num-cell">$12M</td><td>$2.0M</td><td><span class="pill green"><svg class="ico"><use href="#ic-megaphone"/></svg>Marketing</span></td></tr>
         <tr class="detail-row"><td colspan="6"><strong>Why it's sized this way:</strong> runs only against named accounts agreed jointly with a seller &mdash; never a blanket send. Anupam owns execution (Google Ads, sequencing, automation, enrichment).</td></tr>
-        <tr class="expandable" data-owner="marketing"><td>Events, lunch-and-learns &amp; tradeshows</td><td class="num-cell">24</td><td>2</td><td class="num-cell">$6M</td><td>$1.0M</td><td><span class="pill green"><svg class="ico"><use href="#ic-megaphone"/></svg>Marketing</span></td></tr>
+        <tr class="expandable" data-owner="marketing"><td>Events, lunch-and-learns &amp; tradeshows</td><td class="num-cell">24</td><td>2</td><td class="num-cell">$12M</td><td>$2.0M</td><td><span class="pill green"><svg class="ico"><use href="#ic-megaphone"/></svg>Marketing</span></td></tr>
         <tr class="detail-row"><td colspan="6"><strong>Why it's sized this way:</strong> 1&ndash;2 co-sponsored lunch-and-learns plus priority tradeshow attendance &mdash; every event needs a speaking-slot push, not just attendance. Tasha owns, with Lusia on logistics.</td></tr>
-        <tr class="expandable" data-owner="marketing"><td>Content, thought leadership &amp; SEO</td><td class="num-cell">12</td><td>1</td><td class="num-cell">$4M</td><td>$0.7M</td><td><span class="pill green"><svg class="ico"><use href="#ic-megaphone"/></svg>Marketing</span></td></tr>
+        <tr class="expandable" data-owner="marketing"><td>Content, thought leadership &amp; SEO</td><td class="num-cell">24</td><td>2</td><td class="num-cell">$12M</td><td>$2.0M</td><td><span class="pill green"><svg class="ico"><use href="#ic-megaphone"/></svg>Marketing</span></td></tr>
         <tr class="detail-row"><td colspan="6"><strong>Why it's sized this way:</strong> one monthly theme reused across webinar, podcast, and thought leadership &mdash; produced in-house at zero marginal cost, feeding the retargeting list.</td></tr>
         <tr class="expandable" data-owner="sales"><td>Existing client expansion &amp; referral</td><td class="num-cell">24</td><td>2</td><td class="num-cell">$12M</td><td>$2.0M</td><td><span class="pill"><svg class="ico"><use href="#ic-users"/></svg>Sales &amp; CS</span></td></tr>
         <tr class="detail-row"><td colspan="6"><strong>Why it's sized this way:</strong> every active client CPOR- and PAL-tagged, with MCI automation triggering on every engagement &mdash; owned jointly by Sales and Customer Success.</td></tr>
@@ -512,76 +633,115 @@
 
   <div class="callout" style="margin-top:26px;">
     <svg class="ico"><use href="#ic-info"/></svg>
-    <div><strong>What this actually means for marketing:</strong> the $15M ARR is company-wide, not marketing alone. Marketing directly owns campaigns, events, and content &mdash; about <strong>$15M pipeline</strong>, <strong>48 of 180</strong> sales-accepted qualified opportunities (4/month), worth roughly <strong>$2.5M ARR</strong>. Manage marketing to this realistic share, not the full target.</div>
+    <div><strong>What this actually means for marketing:</strong> the $15M ARR is company-wide, not marketing alone. Marketing directly owns campaigns, events, and content &mdash; about <strong>$36M pipeline</strong>, <strong>72 of 180</strong> sales-accepted qualified opportunities (6/month), worth roughly <strong>$6.0M ARR</strong>, about <strong>40% of target</strong>. Ecosystem relationships (7/month) and expansion (2/month) sit with Sales, Partner &amp; Customer Success.</div>
   </div>
-  <p class="source-note">ARR figures above use the plan's overall blended conversion rate &mdash; 16.67% ($15M ARR / $90M pipeline) &mdash; applied to each channel's pipeline.</p>
 </section>
 
 <!-- ============ FOUR JOBS ============ -->
 <section id="jobs" class="reveal">
-  <div class="eyebrow"><svg class="ico"><use href="#ic-target"/></svg>The FY27 Framework</div>
-  <h2 class="section-title">Four Strategic Jobs</h2>
+  <div class="eyebrow"><svg class="ico"><use href="#ic-target"/></svg>Four Execution Priorities</div>
+  <h2 class="section-title">Each Priority Removes Friction</h2>
   <div class="section-rule"></div>
-  <p class="section-sub">Everything below connects to a commercial result, a named account, a pipeline goal, seller activation, or Microsoft funding &mdash; or it belongs in the stop-doing list.</p>
+  <p class="section-sub">Between demand creation and revenue conversion &mdash; one funnel, shared ownership, measurable progress.</p>
 
   <div class="grid-2x2">
     <div class="job-card">
       <div class="job-ico"><svg class="ico"><use href="#ic-dollar"/></svg></div>
-      <div class="job-no">Job 1</div>
-      <h3>Partner Readiness</h3>
-      <div class="owner">Owner: Tasha Widhson</div>
+      <div class="job-no">Priority 01</div>
+      <h3>Partner Center</h3>
+      <div class="owner">Shared owners: Tasha, Scott, Peter, Sasha + Oscar</div>
       <ul>
-        <li>Re-list cX Outcomes OS &amp; cX AgentOS under the new Marketplace/ISV structure; add a standalone Salesforce Switch listing</li>
-        <li>Confirm MACC eligibility, including the $100K threshold, and close the gap</li>
-        <li>Every opportunity entered as Co-Sell &mdash; no exceptions</li>
-        <li>CPOR/PAL audit with Sales &amp; Delivery; build MCI automation toward $500K&ndash;$1M</li>
+        <li><strong>PAL tag every eligible client and opportunity</strong> &mdash; creates visibility, attribution, and a cleaner Microsoft-connected revenue picture.</li>
+        <li><strong>Register co-sell opportunities and claim MCI funds</strong> &mdash; build the habit into the opportunity process, not as an end-of-quarter cleanup.</li>
       </ul>
-      <button class="expand-toggle" type="button">Timing &amp; success measure <svg class="ico"><use href="#ic-compass"/></svg></button>
-      <div class="expand-panel"><div class="expand-panel-inner"><strong>Timing:</strong> this quarter, then a standing quarterly review. <strong>Success measure:</strong> MCI utilization tracked like revenue against the $500K&ndash;$1M target; MACC eligibility promoted to Microsoft field teams once confirmed.</div></div>
-    </div>
-    <div class="job-card">
-      <div class="job-ico"><svg class="ico"><use href="#ic-users"/></svg></div>
-      <div class="job-no">Job 2</div>
-      <h3>Seller Activation</h3>
-      <div class="owner">Owner: Tasha, with Peter &amp; Bill (Sales), and Sasha</div>
-      <ul>
-        <li>Map our seller cohort onto Sales's Key, Target, and Opportunistic tiers &mdash; one seller model, not two</li>
-        <li>Build direct, recurring SME&amp;C relationships via team-meeting outreach</li>
-        <li>Mirror tiering for Salesforce as lighthouse engagements prove out</li>
-        <li>Digital Sales Room created the moment every meeting is booked (Sasha)</li>
-      </ul>
-      <button class="expand-toggle" type="button">Timing &amp; success measure <svg class="ico"><use href="#ic-compass"/></svg></button>
-      <div class="expand-panel"><div class="expand-panel-inner"><strong>Timing:</strong> tiers named this quarter; ongoing thereafter. <strong>DSR definition:</strong> trigger &mdash; created the moment a meeting is booked; contents &mdash; one branded deck, demo, supporting docs; <strong>success measure</strong> &mdash; cycle time and close rate vs. opportunities without a room.</div></div>
+      <button class="expand-toggle" type="button">Who owns what <svg class="ico"><use href="#ic-compass"/></svg></button>
+      <div class="expand-panel"><div class="expand-panel-inner">Tasha, Scott, Peter and Sasha drive the workflow. Oscar keeps certifications and requirements current.</div></div>
     </div>
     <div class="job-card">
       <div class="job-ico"><svg class="ico"><use href="#ic-target"/></svg></div>
-      <div class="job-no">Job 3</div>
-      <h3>Named-Account Demand</h3>
-      <div class="owner">Owner: Tasha (primary), with Anupam &amp; Lusia</div>
+      <div class="job-no">Priority 02</div>
+      <h3>Strategic Demand</h3>
+      <div class="owner">Owners: Tasha + Peter</div>
       <ul>
-        <li>Hard rule: named-account list, seller sponsor, follow-up owner, pipeline goal &mdash; before anything goes on the calendar</li>
-        <li>Email &amp; LinkedIn campaigns run only against named accounts</li>
-        <li>1&ndash;2 co-sponsored lunch-and-learns with Microsoft, Salesforce &amp; partners</li>
-        <li>Export site-visitor data monthly and retarget named accounts</li>
+        <li><strong>Always-on nurture</strong> &mdash; keep prospects moving with relevant content tied to stage, role, and friction.</li>
+        <li><strong>Microsoft-list campaigns</strong> &mdash; build focused outreach and advertising around validated Microsoft account lists.</li>
+        <li><strong>Lookalike &amp; competitor targeting</strong> &mdash; use client profiles, such as Allstate, to target similar insurers and named competitors.</li>
       </ul>
-      <button class="expand-toggle" type="button">Timing &amp; success measure <svg class="ico"><use href="#ic-compass"/></svg></button>
-      <div class="expand-panel"><div class="expand-panel-inner"><strong>Timing:</strong> continuous, starting this quarter. <strong>Owns execution:</strong> Anupam runs Google Ads, sequencing, automation &amp; enrichment, including the Clay replacement and the 3-month Warmly.ai sunset.</div></div>
+      <button class="expand-toggle" type="button">Who owns what <svg class="ico"><use href="#ic-compass"/></svg></button>
+      <div class="expand-panel"><div class="expand-panel-inner">Tasha and Peter build the targeted campaign plan together &mdash; every list validated against Microsoft account data before it goes live.</div></div>
     </div>
     <div class="job-card">
       <div class="job-ico"><svg class="ico"><use href="#ic-megaphone"/></svg></div>
-      <div class="job-no">Job 4</div>
-      <h3>Consistent Outcomes OS Messaging</h3>
-      <div class="owner">Owner: Tasha, with Lusia, Anupam, Sasha &amp; Leadership</div>
+      <div class="job-no">Priority 03</div>
+      <h3>One Brand System</h3>
+      <div class="owner">Owners: Tasha + Sasha</div>
       <ul>
-        <li>One monthly theme, reused across webinar, podcast, outreach &amp; DSRs</li>
-        <li>One webinar + one podcast every month; podcast ownership rotates across Leadership</li>
-        <li>Thought-leadership pipeline: Leadership sends 1&ndash;2 articles + clips monthly</li>
-        <li>Three interactive HTML sub-pages: cX Outcomes OS, cX AgentOS, cX RevOS</li>
+        <li><strong>Consistent</strong> &mdash; the same approved colors, Poppins typography, logos, and messaging across every channel.</li>
+        <li><strong>Centralized</strong> &mdash; house current logos, templates, one-pagers, decks, and standards in one clean shared space.</li>
+        <li><strong>Easy to use</strong> &mdash; give every team member a clear place to review, obtain, download, and share approved assets.</li>
       </ul>
-      <button class="expand-toggle" type="button">Timing &amp; success measure <svg class="ico"><use href="#ic-compass"/></svg></button>
-      <div class="expand-panel"><div class="expand-panel-inner"><strong>Timing:</strong> one theme per month, starting this quarter. Sasha owns social scheduling &amp; images from that theme; website messaging aligns to the three solutions with SEO/blog topics (Answer the Public) tied to the same theme.</div></div>
+      <button class="expand-toggle" type="button">Who owns what <svg class="ico"><use href="#ic-compass"/></svg></button>
+      <div class="expand-panel"><div class="expand-panel-inner">Tasha and Sasha centralize the asset library &mdash; a single shared hub replaces scattered brand files across the team.</div></div>
+    </div>
+    <div class="job-card">
+      <div class="job-ico"><svg class="ico"><use href="#ic-monitor"/></svg></div>
+      <div class="job-no">Priority 04</div>
+      <h3>Digital Sales Rooms</h3>
+      <div class="owner">Owner: Sasha, with Tasha</div>
+      <ul>
+        <li><strong>One room from first conversation</strong> &mdash; bring buyers, Microsoft, delivery, and leadership into one shared, current experience.</li>
+        <li><strong>Fast to launch, and getting faster</strong> &mdash; Sasha can build a room in ~30 minutes today; a connector could reduce setup significantly.</li>
+        <li><strong>Living content, not scattered files</strong> &mdash; centralize standard and working documents so teams can update, comment, download, and share quickly.</li>
+      </ul>
+      <button class="expand-toggle" type="button">Who owns what <svg class="ico"><use href="#ic-compass"/></svg></button>
+      <div class="expand-panel"><div class="expand-panel-inner">Sasha builds and maintains every room; Tasha supplies the branded content that goes inside it.</div></div>
     </div>
   </div>
+
+  <div class="col-title-row" style="border-bottom:2px solid var(--green);margin-top:44px;">
+    <div class="col-title">Partner Funding Checklist</div>
+  </div>
+  <p class="section-sub" style="margin-top:14px;margin-bottom:20px;">A running checklist to keep Microsoft partner funding mechanics from slipping between the cracks of a lean team.</p>
+  <div class="table-scroll">
+    <table class="matrix">
+      <thead><tr><th>Item</th><th>Status</th><th>Next Action</th></tr></thead>
+      <tbody>
+        <tr><td>cX Outcomes OS / AgentOS / Salesforce Switch in Marketplace/ISV</td><td><span class="pill amber">Partial</span></td><td>Re-list under updated structure; create the Switch listing</td></tr>
+        <tr><td>MACC eligibility ($100K) / key specializations</td><td><span class="pill amber">To confirm</span></td><td>Confirm eligibility path; map specializations to vouchers, assign owner</td></tr>
+        <tr><td>Every opportunity as Co-Sell in Partner Center</td><td><span class="pill red">Inconsistent</span></td><td>Register at the opportunity stage, not end-of-quarter &mdash; Tasha, Scott, Peter &amp; Sasha</td></tr>
+        <tr><td>CPOR/PAL tagging / MCI notification, invoicing &amp; MACC promotion</td><td><span class="pill red">Partial / Not started</span></td><td>Audit client list; build the MCI alert; Oscar keeps certifications current</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ INSTRUMENT THE FUNNEL ============ -->
+<section id="instrument" class="reveal" style="background:var(--offwhite);">
+  <div class="eyebrow"><svg class="ico"><use href="#ic-bar"/></svg>Measurement + AI</div>
+  <h2 class="section-title">Instrument the Funnel and Use AI to Reduce the Work</h2>
+  <div class="section-rule"></div>
+  <p class="section-sub">Document definitions, owners, handoffs, and conversion metrics from MQL through win.</p>
+
+  <div class="instr-flow">
+    <div class="instr-node"><div class="instr-ico"><svg class="ico"><use href="#ic-target"/></svg></div><div class="num">900</div><div class="lbl">MQLs</div></div>
+    <span class="instr-arrow">&rarr;</span>
+    <div class="instr-node hi"><div class="instr-ico"><svg class="ico"><use href="#ic-users"/></svg></div><div class="num">&darr;</div><div class="lbl">Qualification</div></div>
+    <span class="instr-arrow">&rarr;</span>
+    <div class="instr-node"><div class="instr-ico"><svg class="ico"><use href="#ic-layers"/></svg></div><div class="num">300</div><div class="lbl">Opportunities</div></div>
+    <span class="instr-arrow">&rarr;</span>
+    <div class="instr-node hi"><div class="instr-ico"><svg class="ico"><use href="#ic-dollar"/></svg></div><div class="num green">60</div><div class="lbl">Wins</div></div>
+    <span class="instr-arrow">&rarr;</span>
+    <div class="instr-node final"><div class="instr-ico"><svg class="ico"><use href="#ic-bar"/></svg></div><div class="num green">$15M</div><div class="lbl">ARR</div></div>
+  </div>
+
+  <div class="cadence-bar">Define stages &middot; Capture source &middot; Track conversion &middot; Review weekly</div>
+
+  <div class="callout">
+    <svg class="ico"><use href="#ic-info"/></svg>
+    <div>Chris will evaluate agents to automate documentation and reporting. Tasha uses AI daily; Peter + Tasha will enable Sasha across sales and marketing.</div>
+  </div>
+
+  <p class="source-note" style="text-align:center;margin-top:20px;font-style:normal;font-weight:600;color:var(--navy);">Human-led. AI-accelerated. Measured from MQL to revenue.</p>
 </section>
 
 <!-- ============ TENETS ============ -->
@@ -592,14 +752,43 @@
   <p class="section-sub">Our job in FY27 is not to do more marketing &mdash; it's to run fewer, better programs against Microsoft and Salesforce.</p>
 
   <div class="tenet-grid">
-    <div class="tenet"><div class="tenet-head"><div class="tno">1</div><div class="tt"><strong>Leverage before labor.</strong> Programs that pay pipeline dividends without proportional headcount come first.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: a three-person team can't out-labor a bigger competitor &mdash; it has to out-leverage them with Marketplace, MACC, specializations, and evergreen retargeting.</div></div>
-    <div class="tenet"><div class="tenet-head"><div class="tno">2</div><div class="tt"><strong>Ecosystem before open market.</strong> Every campaign speaks first to the Microsoft/Salesforce install base.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: intent and budget already exist inside the ecosystem &mdash; marketing to the open market competes for attention that hasn't been pre-qualified.</div></div>
-    <div class="tenet"><div class="tenet-head"><div class="tno">3</div><div class="tt"><strong>Cadence before campaigns.</strong> One reliable monthly webinar and podcast beats a bigger one-off effort.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: a consistent monthly rhythm compounds &mdash; one strong campaign that doesn't repeat produces a spike, not a pipeline.</div></div>
-    <div class="tenet"><div class="tenet-head"><div class="tno">4</div><div class="tt"><strong>Three people, one motion.</strong> Every program needs a single owner; we run no more than we can sustain.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: cross-functional help from Sales, Delivery, and Lusia is load-bearing, not optional &mdash; an unowned program is the first thing that slips.</div></div>
-    <div class="tenet"><div class="tenet-head"><div class="tno">5</div><div class="tt"><strong>Expert, not salesy.</strong> One consistent message across every channel and contributor.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: thought leadership shapes credibility with technical buyers &mdash; a pitch-toned message undercuts the expert positioning the ecosystem responds to.</div></div>
-    <div class="tenet"><div class="tenet-head"><div class="tno">6</div><div class="tt"><strong>Branded decks only.</strong> Every client meeting and Digital Sales Room. No exceptions.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: branded campaigns return roughly 19x more per dollar than generic ones &mdash; consistency is a performance lever, not just a style rule.</div></div>
-    <div class="tenet"><div class="tenet-head"><div class="tno">7</div><div class="tt"><strong>Commercial result, not content volume.</strong> Judged by named accounts, seller sponsor, pipeline goal.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: events without a speaking-slot plan produce visibility, not pipeline &mdash; every program needs a stated commercial goal before it goes on the calendar.</div></div>
-    <div class="tenet"><div class="tenet-head"><div class="tno">8</div><div class="tt"><strong>One seller model, not two.</strong> Every seller relationship maps to Sales's shared tiers.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: a second, marketing-only tiering system would fragment seller attention instead of concentrating it on the accounts Sales already prioritizes.</div></div>
+    <div class="tenet"><div class="tenet-head"><div class="tno">1</div><div class="tt"><strong>Leverage before labor.</strong> Prioritize what pays pipeline dividends without proportional headcount.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: a three-person team can't out-labor a bigger competitor &mdash; it has to out-leverage them with Marketplace, MACC, specializations, and evergreen retargeting.</div></div>
+    <div class="tenet"><div class="tenet-head"><div class="tno">2</div><div class="tt"><strong>Ecosystem before open market.</strong> Every campaign speaks first to the Microsoft/Salesforce base.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: intent and budget already exist inside the ecosystem &mdash; marketing to the open market competes for attention that hasn't been pre-qualified.</div></div>
+    <div class="tenet"><div class="tenet-head"><div class="tno">3</div><div class="tt"><strong>Cadence before campaigns.</strong> One reliable monthly webinar/podcast beats a bigger one-off.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: a consistent monthly rhythm compounds &mdash; one strong campaign that doesn't repeat produces a spike, not a pipeline.</div></div>
+    <div class="tenet"><div class="tenet-head"><div class="tno">4</div><div class="tt"><strong>Commercial result, not volume.</strong> Every campaign needs named accounts, a sponsor, an owner, and a pipeline goal.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: events without a speaking-slot plan produce visibility, not pipeline &mdash; every program needs a stated commercial goal before it goes on the calendar.</div></div>
+    <div class="tenet"><div class="tenet-head"><div class="tno">5</div><div class="tt"><strong>One seller model.</strong> Every relationship maps to Sales's Key/Target/Opportunistic tiers.</div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: a second, marketing-only tiering system would fragment seller attention instead of concentrating it on the accounts Sales already prioritizes.</div></div>
+    <div class="tenet"><div class="tenet-head"><div class="tno">6</div><div class="tt"><strong>Branded decks only, everywhere.</strong></div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: branded campaigns return roughly 19x more per dollar than generic ones &mdash; consistency is a performance lever, not just a style rule.</div></div>
+    <div class="tenet"><div class="tenet-head"><div class="tno">7</div><div class="tt"><strong>Expert, not salesy.</strong></div><div class="chev"><svg class="ico"><use href="#ic-compass"/></svg></div></div><div class="tenet-more">Why it matters: thought leadership shapes credibility with technical buyers &mdash; a pitch-toned message undercuts the expert positioning the ecosystem responds to.</div></div>
+  </div>
+</section>
+
+<!-- ============ STATE OF THE BUSINESS ============ -->
+<section id="state" class="reveal">
+  <div class="eyebrow"><svg class="ico"><use href="#ic-info"/></svg>Where We Stand Today</div>
+  <h2 class="section-title">State of the Business</h2>
+  <div class="section-rule"></div>
+  <p class="section-sub">An honest maturity check before we commit to the plan above.</p>
+
+  <div class="maturity-callout">
+    <strong>Current maturity:</strong> strategy and target programs are clear. The highest-leverage items &mdash; Marketplace/MACC, specializations, CPOR/PAL/MCI hygiene, and a real content cadence &mdash; aren't yet operational.
+  </div>
+
+  <div class="sob-grid">
+    <div class="sob-col real">
+      <h4><svg class="ico"><use href="#ic-check"/></svg>What's Already Real</h4>
+      <ul>
+        <li>Existing Microsoft/Salesforce and partner relationships; a client base to mine; a website to optimize.</li>
+        <li>Set up in Partner Center; a Key/Target/Opportunistic tiering model already exists, jointly owned with Sales.</li>
+      </ul>
+    </div>
+    <div class="sob-col gap">
+      <h4><svg class="ico"><use href="#ic-target"/></svg>Where Hypothesis Outruns Execution</h4>
+      <ul>
+        <li>Marketplace/ISV listings haven't moved; MACC isn't confirmed; Co-Sell entry isn't consistent; CPOR/PAL tagging and MCI automation aren't in place.</li>
+        <li>On Salesforce, we're dependent on one relationship (Phil Cooper) &mdash; shouldn't scale broad until lighthouse wins prove out.</li>
+        <li>Team moving from four to three (Dominique's role ending); capacity and tooling transition (Clay/Warmly.ai) are the main bottlenecks.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -621,6 +810,11 @@
     <div class="bench-card"><div class="bic"><svg class="ico"><use href="#ic-dollar"/></svg></div><div class="big">$13 : $0.68</div><div class="title">Branded vs. generic ad return</div><div class="desc">A 19x gap per dollar spent &mdash; the basis for the branded-decks-only rule</div><div class="tap-hint">Tap for source</div><div class="src-drop">Source: LinkedIn B2B Institute, 2025 analysis of 1,400+ campaigns.</div></div>
     <div class="bench-card"><div class="bic"><svg class="ico"><use href="#ic-dollar"/></svg></div><div class="big">$10.11</div><div class="title">Partner revenue per $1 Microsoft</div><div class="desc">Ecosystem-wide average earned by Microsoft partners</div><div class="tap-hint">Tap for source</div><div class="src-drop">Source: Microsoft partner ecosystem economic impact benchmarking.</div></div>
     <div class="bench-card"><div class="bic"><svg class="ico"><use href="#ic-bar"/></svg></div><div class="big">3x / 6x</div><div class="title">Co-sell deals close faster / larger</div><div class="desc">Azure co-sell deals close 3x faster and run 6x larger than non-co-sell</div><div class="tap-hint">Tap for source</div><div class="src-drop">Source: Microsoft Azure co-sell program performance data, recent two-year period.</div></div>
+  </div>
+  <div class="bench-grid" style="margin-top:18px;">
+    <div class="bench-card"><div class="bic"><svg class="ico"><use href="#ic-megaphone"/></svg></div><div class="big countup" data-target="81" data-suffix="%">0%</div><div class="title">Rank webinars as top lead source</div><div class="desc">Forrester &mdash; the single most-cited lead source among marketing leaders surveyed</div><div class="tap-hint">Tap for source</div><div class="src-drop">Source: 2026 Forrester study of 2,800 marketing leaders.</div></div>
+    <div class="bench-card"><div class="bic"><svg class="ico"><use href="#ic-monitor"/></svg></div><div class="big countup" data-target="30" data-suffix="%">0%</div><div class="title">Of B2B cycles run through a DSR by 2026</div><div class="desc">Gartner forecast &mdash; Digital Sales Rooms move from novelty to standard practice</div><div class="tap-hint">Tap for source</div><div class="src-drop">Source: Gartner digital sales room adoption forecast.</div></div>
+    <div class="bench-card"><div class="bic"><svg class="ico"><use href="#ic-dollar"/></svg></div><div class="big">$750K&ndash;$1M</div><div class="title">MCI, low-end annual estimate</div><div class="desc">A disciplined Marketplace/MACC/Co-Sell process can yield this per year &mdash; our MCI basis</div><div class="tap-hint">Tap for source</div><div class="src-drop">Source: Microsoft partner ecosystem MCI benchmarking, low-end scenario.</div></div>
   </div>
   <p class="source-note">Sources: 2026 Forrester study of 2,800 marketing leaders; Gartner; LinkedIn B2B Institute (1,400+ campaigns); Microsoft partner ecosystem benchmarking; industry sales-technology adoption research.</p>
 </section>
@@ -649,6 +843,7 @@
       </tbody>
     </table>
   </div>
+  <p class="source-note">A note on these numbers: reasonable starting assumptions, not a substitute for real numbers. Replace with actual segment figures, pipeline by channel, and Finance's approved budget when available.</p>
 </section>
 
 <!-- ============ TEAM & CAPACITY ============ -->
@@ -688,6 +883,24 @@
     </div>
   </div>
 
+  <div class="callout" style="margin-bottom:34px;">
+    <svg class="ico"><use href="#ic-info"/></svg>
+    <div><strong>Team transition:</strong> the core team is moving from four to three &mdash; Dominique's role is ending. Capacity and tooling transition (the Clay replacement and Warmly.ai sunset) are the main bottlenecks over the next quarter.</div>
+  </div>
+
+  <div class="table-scroll" style="margin-bottom:30px;">
+    <table class="matrix">
+      <caption>Workstream Ownership &amp; Cadence</caption>
+      <thead><tr><th>Workstream</th><th>Primary Owner</th><th>Cadence</th></tr></thead>
+      <tbody>
+        <tr><td>Job 1: Marketplace / MACC / CPOR / PAL / MCI</td><td>Tasha Widhson, with Sasha &amp; Delivery</td><td>One-time close-out, then standing checklist</td></tr>
+        <tr><td>Job 2: Seller tiering, SME&amp;C outreach, Salesforce mirror, Digital Sales Rooms</td><td>Tasha Widhson, with Sasha, Peter &amp; Bill; Sales team</td><td>Named this quarter; per booked meeting</td></tr>
+        <tr><td>Job 3: Campaigns, Google Ads, retargeting, lunch-and-learns &amp; events</td><td>Tasha Widhson (primary), with Anupam, Lusia &amp; Sales</td><td>Continuous / 1&ndash;2 events per cycle</td></tr>
+        <tr><td>Job 4: Monthly theme, webinar, podcast, social, website/SEO</td><td>Tasha Widhson, with Sasha; Leadership rotates podcast (Lusia helps)</td><td>Monthly / ongoing</td></tr>
+        <tr><td>Field packaging: one-pagers, PPT, screenshots</td><td>Tasha Widhson, with Sasha</td><td>Ongoing; immediate for the two one-pagers</td></tr>
+      </tbody>
+    </table>
+  </div>
   <div class="col-title-row" style="border-bottom:2px solid var(--green);">
     <div class="col-title">Cross-Functional Support &mdash; Load-Bearing, Not Optional</div>
   </div>
@@ -722,7 +935,7 @@
       </ul>
     </div>
     <div class="check-col">
-      <div class="col-title-row"><div class="col-title">Commitments Requested Today</div><span class="progress-tag" data-count="0/9">0 / 9 done</span></div>
+      <div class="col-title-row"><div class="col-title">Commitments Requested Today</div><span class="progress-tag" data-count="0/11">0 / 11 done</span></div>
       <ul class="check-list">
         <li><div class="box"><svg viewBox="0 0 24 24"><polyline points="4 12 9 17 20 6"/></svg></div><span class="lbl-text">Marketplace/ISV relisting, Salesforce Switch, MACC status confirmed</span></li>
         <li><div class="box"><svg viewBox="0 0 24 24"><polyline points="4 12 9 17 20 6"/></svg></div><span class="lbl-text">Sales &amp; Delivery commit to closing PAL/CPOR gaps</span></li>
@@ -733,6 +946,8 @@
         <li><div class="box"><svg viewBox="0 0 24 24"><polyline points="4 12 9 17 20 6"/></svg></div><span class="lbl-text">Lunch-and-learn partner(s) and dates locked</span></li>
         <li><div class="box"><svg viewBox="0 0 24 24"><polyline points="4 12 9 17 20 6"/></svg></div><span class="lbl-text">Clay replacement &amp; 3-month Warmly.ai sunset confirmed</span></li>
         <li><div class="box"><svg viewBox="0 0 24 24"><polyline points="4 12 9 17 20 6"/></svg></div><span class="lbl-text">Three branded decks locked as the only approved materials</span></li>
+        <li><div class="box"><svg viewBox="0 0 24 24"><polyline points="4 12 9 17 20 6"/></svg></div><span class="lbl-text">Capacity plan confirmed for the three-person team</span></li>
+        <li><div class="box"><svg viewBox="0 0 24 24"><polyline points="4 12 9 17 20 6"/></svg></div><span class="lbl-text">Segment-level ARR figures confirmed, all due before Q4</span></li>
       </ul>
     </div>
   </div>
@@ -741,28 +956,25 @@
 <!-- ============ CLOSING SUMMARY ============ -->
 <section id="closing" class="closing reveal">
   <div class="eyebrow"><svg class="ico"><use href="#ic-flag"/></svg>Closing Summary</div>
-  <h2 class="section-title">The Numbers Marketing Is Shooting For</h2>
+  <h2 class="section-title">Start the Operating Rhythm Now</h2>
   <div class="section-rule"></div>
-  <p class="section-sub" style="color:#C9D2D9;">Reconciled with Chuck and Peter's required math, so everyone reads the same numbers &mdash; managed against a realistic marketing share, not the full company number.</p>
+  <p class="section-sub" style="color:#C9D2D9;">Build the path to 900 &rarr; 300 &rarr; 60 &mdash; one funnel, shared ownership, measurable progress.</p>
 
   <div class="table-scroll">
     <table class="matrix">
-      <thead><tr><th>What We're Managing To</th><th>Number</th><th>Context</th></tr></thead>
+      <thead><tr><th>Workstream</th><th>Owners</th><th>Immediate Focus</th></tr></thead>
       <tbody>
-        <tr><td>Marketing-owned qualified opportunities</td><td class="num-cell">48/yr (4/mo)</td><td>Named-account campaigns, events, and content</td></tr>
-        <tr><td>Marketing-owned qualified pipeline</td><td class="num-cell">~$15M</td><td>Marketing's share of the $90M company-wide target</td></tr>
-        <tr><td>Marketing-owned ARR responsibility</td><td class="num-cell">~$2.5M</td><td>Marketing's share of the $15M target, not the full number</td></tr>
-        <tr><td>Annual marketing budget</td><td class="num-cell">~$110K</td><td>Sized to what three people can run and justify</td></tr>
-        <tr><td>MCI incentive target</td><td class="num-cell">$500K&ndash;$1M</td><td>Tracked with the same discipline as revenue</td></tr>
-        <tr><td>MCI/MACC/voucher ARR line item</td><td class="num-cell">$1M</td><td>Inside the partner channel, not additional to it</td></tr>
-        <tr><td>Coverage ratio &amp; deal size</td><td class="num-cell">3x / $500K / $250K</td><td>Pipeline coverage, booked contract value, ARR &mdash; Chuck &amp; Peter's math</td></tr>
-        <tr class="total"><td>Company-wide (all channels)</td><td>180&rarr;86&rarr;60</td><td>$90M pipeline, $30M booked, $15M ARR &mdash; owned jointly with Sales, Partner &amp; CS</td></tr>
+        <tr><td>Partner Center</td><td class="num-cell">Tasha &middot; Scott &middot; Peter &middot; Sasha</td><td>Oscar: certification readiness</td></tr>
+        <tr><td>Demand</td><td class="num-cell">Tasha + Peter</td><td>Build the targeted campaign plan</td></tr>
+        <tr><td>Brand + DSR</td><td class="num-cell">Tasha + Sasha</td><td>Centralize assets; launch rooms</td></tr>
+        <tr><td>Measurement + AI</td><td class="num-cell">Revenue team + Chris</td><td>Define the funnel; evaluate agents</td></tr>
+        <tr class="total"><td>Company-wide funnel</td><td>900 &rarr; 300 &rarr; 60</td><td>$75M pipeline, $30M booked, $15M ARR &mdash; 5x coverage</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="bottom-line">
-    <strong style="color:var(--green);">The bottom line:</strong> these are third-party benchmarks, not our own results. They show this plan points a lean team at the highest-leverage, best-evidenced programs &mdash; organized around four jobs, reconciled with Chuck and Peter's required math, and managed against a realistic marketing share: <strong style="color:var(--green);">$2.5M and 48 opportunities</strong>, not the full company number.
+    <strong style="color:var(--green);">First 30 days:</strong> assign owners &middot; confirm definitions &middot; launch the shared asset hub &middot; pilot the next Digital Sales Room.
   </div>
 
   <div class="final-tag">&ldquo;Modern CRM. Active Agents. Never Legacy Again. <strong>We deliver Outcomes. Human-Led, AI Accelerated.</strong>&rdquo;</div>
@@ -797,7 +1009,7 @@
   <p class="max-caption">MaX &mdash; <span>Human-Led, AI-Accelerated</span>, and always dressed for the co-sell meeting.</p>
 </section>
 
-<footer class="pagefoot">congruentX &nbsp;|&nbsp; FY27 &amp; Q4 2026 Planning &nbsp;|&nbsp; Confidential</footer>
+<footer class="pagefoot">congruentX &nbsp;|&nbsp; FY27 Marketing + Revenue Activation Plan &nbsp;|&nbsp; Confidential</footer>
 
 <script>
   // ---- animated counters ----
